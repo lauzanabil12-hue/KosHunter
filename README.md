@@ -1,6 +1,6 @@
 # KosHunter - Platform Informasi Kos Mahasiswa
 
-Tugas Perkuliahan BAB 2 - HTML Murni (Fullstack)
+Tugas Perkuliahan Week 2 - HTML 
 
 **Identitas Mahasiswa:**
 - **Nama:** Muhammad Lauza Nabil
@@ -8,10 +8,10 @@ Tugas Perkuliahan BAB 2 - HTML Murni (Fullstack)
 
 ## Tampilan Halaman Web
 ### 1. Halaman Utama / Daftar Kos
-![Daftar Kos](index.html.png)
+![Daftar Kos](SS-index.png)
 
 ### 2. Halaman Detail Kos
-![Detail Kos](detail.html.png)
+![Detail Kos](SS-detail.png)
 
 ### 3. Halaman Form Tambah Data Kos
-![Form Tambah Kos](tambah-Kos.html.png)
+![Form Tambah Kos](SS-tambah-kos.png)
