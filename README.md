@@ -8,10 +8,10 @@ Tugas Perkuliahan BAB 2 - HTML Murni (Fullstack)
 
 ## Tampilan Halaman Web
 ### 1. Halaman Utama / Daftar Kos
-![Daftar Kos](docs/screenshots/SS-index.png)
+![Daftar Kos](index.html.png)
 
 ### 2. Halaman Detail Kos
-![Detail Kos](docs/screenshots/SS-detail.png)
+![Detail Kos](detail.html.png)
 
 ### 3. Halaman Form Tambah Data Kos
-![Form Tambah Kos](docs/screenshots/SS-tambah-kos.png)
+![Form Tambah Kos](tambah-Kos.html.png)
