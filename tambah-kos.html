@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KosHunter - Formulir Tambah Kos</title>
+</head>
+<body>
+
+    <header>
+        <h1>KosHunter</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda (Daftar Kos)</a></li>
+                <li><a href="tambah-kos.html">Tambah Data Kos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulir Tambah Data Kos Baru</h2>
+            <p>Silakan isi informasi di bawah ini untuk mengunggah data kos baru:</p>
+
+            <form action="#" method="post">
+                
+                <p>
+                    <label for="nama_kos">Nama Kos:</label><br>
+                    <input type="text" id="nama_kos" name="nama_kos" placeholder="Contoh: Kos Mawar" required>
+                </p>
+
+                <p>
+                    <label for="jenis_kos">Kategori / Jenis Kos:</label><br>
+                    <select id="jenis_kos" name="jenis_kos" required>
+                        <option value="">-- Pilih Jenis Kos --</option>
+                        <option value="putra">Putra</option>
+                        <option value="putri">Putri</option>
+                        <option value="campur">Campur</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="harga">Harga Sewa per Bulan (Rp):</label><br>
+                    <input type="number" id="harga" name="harga" placeholder="850000" required>
+                </p>
+
+                <p>
+                    <label for="foto">Unggah Foto Kamar/Kos:</label><br>
+                    <input type="file" id="foto" name="foto">
+                </p>
+
+                <p>
+                    <label for="alamat">Alamat Lengkap:</label><br>
+                    <textarea id="alamat" name="alamat" rows="3" cols="40" placeholder="Masukkan jalan, desa, dan patokan dekat lokasi..."></textarea>
+                </p>
+
+                <p>
+                    <label for="deskripsi">Deskripsi & Fasilitas Tambahan:</label><br>
+                    <textarea id="deskripsi" name="deskripsi" rows="5" cols="40" placeholder="Jelaskan fasilitas kamar mandi, wifi, parkir, dll..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Simpan Data Kos</button>
+                    <button type="reset">Batal / Reset</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KosHunter - Muhammad Lauza Nabil (103022400118)</p>
+    </footer>
+
+</body>
+</html>
