@@ -1,17 +1,14 @@
 # KosHunter - Platform Informasi Kos Mahasiswa
 
-Tugas Perkuliahan Week 2 - HTML 
+Tugas Perkuliahan Week 3 - CSS Native (Fullstack)
 
 **Identitas Mahasiswa:**
 - **Nama:** Muhammad Lauza Nabil
 - **NIM:** 103022400118
 
-## Tampilan Halaman Web
-### 1. Halaman Utama / Daftar Kos
-![Daftar Kos](docs/screenshots/SS-index.png)
+## Tampilan Aplikasi Web (Desktop & Mobile)
+### 1. Tampilan Desktop
+![Tampilan Desktop](SS-desktop.png)
 
-### 2. Halaman Detail Kos
-![Detail Kos](docs/screenshots/SS-detail.png)
-
-### 3. Halaman Form Tambah Data Kos
-![Form Tambah Kos](docs/screenshots/SS-tambah-kos.png)
+### 2. Tampilan Responsif Mobile (@media query)
+![Tampilan Mobile](SS-mobile.png)
