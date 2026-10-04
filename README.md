@@ -1,6 +1,6 @@
 # KosHunter - Platform Informasi Kos Mahasiswa
 
-Tugas Perkuliahan Week 3 - CSS Native (Fullstack)
+Tugas Perkuliahan Week 3 - CSS Native 
 
 **Identitas Mahasiswa:**
 - **Nama:** Muhammad Lauza Nabil
