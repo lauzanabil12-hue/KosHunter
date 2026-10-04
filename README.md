@@ -8,10 +8,10 @@ Tugas Perkuliahan Week 2 - HTML
 
 ## Tampilan Halaman Web
 ### 1. Halaman Utama / Daftar Kos
-![Daftar Kos](SS-index.png)
+![Daftar Kos](docs/screenshots/SS-index.png)
 
 ### 2. Halaman Detail Kos
-![Detail Kos](SS-detail.png)
+![Detail Kos](docs/screenshots/SS-detail.png)
 
 ### 3. Halaman Form Tambah Data Kos
-![Form Tambah Kos](SS-tambah-kos.png)
+![Form Tambah Kos](docs/screenshots/SS-tambah-kos.png)
