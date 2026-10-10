@@ -4,52 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Kos - KosHunter</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>KosHunter</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Kembali ke Daftar Kos</a></li>
-                </ul>
-            </nav>
-        </header>
+<body class="bg-light">
 
-        <main>
-            <h2>Detail Kos: Kos Mawar Sukabirus</h2>
+    <!-- Navigasi Responsif -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">KosHunter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Kembali ke Daftar Kos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <div class="card shadow-sm border-0 p-4">
+            <h2 class="h3 text-primary fw-bold mb-4">Detail Kos: Kos Mawar Sukabirus</h2>
             
-            <section>
-                <h3>Informasi Umum</h3>
-                <p><strong>Lokasi:</strong> Jl. Sukabirus No. 12, Bojongsoang</p>
-                <p><strong>Harga:</strong> Rp 850.000 / bulan</p>
-                <p><strong>Kategori:</strong> Khusus Putri</p>
-                <p><strong>Status Ketersediaan:</strong> Tersisa 2 Kamar</p>
-            </section>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-3 bg-light rounded border">
+                        <h4 class="h5 text-secondary border-bottom pb-2">Informasi Umum</h4>
+                        <p class="mb-1"><strong>Lokasi:</strong> Jl. Sukabirus No. 12, Bojongsoang</p>
+                        <p class="mb-1"><strong>Harga:</strong> Rp 850.000 / bulan</p>
+                        <p class="mb-1"><strong>Kategori:</strong> <span class="badge bg-danger">Khusus Putri</span></p>
+                        <p class="mb-0"><strong>Status Ketersediaan:</strong> <span class="badge bg-success">Tersisa 2 Kamar</span></p>
+                    </div>
+                </div>
 
-            <section>
-                <h3>Fasilitas Kos</h3>
-                <ul>
-                    <li>Kamar Mandi Dalam</li>
-                    <li>Kasur & Lemari Pakaian</li>
-                    <li>Wi-Fi Gratis 24 Jam</li>
-                    <li>Dapur Bersama & Kulkas</li>
-                    <li>Parkir Motor Luas</li>
-                </ul>
-            </section>
+                <div class="col-md-6">
+                    <div class="p-3 bg-light rounded border">
+                        <h4 class="h5 text-secondary border-bottom pb-2">Fasilitas Kos</h4>
+                        <ul class="mb-0">
+                            <li>Kamar Mandi Dalam</li>
+                            <li>Kasur & Lemari Pakaian</li>
+                            <li>Wi-Fi Gratis 24 Jam</li>
+                            <li>Dapur Bersama & Kulkas</li>
+                            <li>Parkir Motor Luas</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <section>
-                <h3>Deskripsi Singkat</h3>
-                <p>Kos Mawar Sukabirus merupakan hunian nyaman khusus putri yang berlokasi dekat dengan gerbang belakang kampus Telkom University. Lingkungan tenang, aman, dan dekat dengan area kuliner serta minimarket.</p>
-            </section>
+                <div class="col-12">
+                    <div class="p-3 bg-light rounded border">
+                        <h4 class="h5 text-secondary border-bottom pb-2">Deskripsi Singkat</h4>
+                        <p class="mb-0">Kos Mawar Sukabirus merupakan hunian nyaman khusus putri yang berlokasi dekat dengan gerbang belakang kampus Telkom University. Lingkungan tenang, aman, dan dekat dengan area kuliner serta minimarket.</p>
+                    </div>
+                </div>
+            </div>
 
-            <p style="margin-top: 15px;"><a href="index.html">&laquo; Kembali ke katalog utama</a></p>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 KosHunter - Muhammad Lauza Nabil (103022400118)</p>
-        </footer>
+            <div class="mt-4">
+                <a href="index.html" class="btn btn-secondary">&laquo; Kembali ke katalog utama</a>
+            </div>
+        </div>
     </div>
+
+    <footer class="text-center py-3 text-muted border-top bg-white">
+        <small>&copy; 2026 Aplikasi KosHunter </small>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

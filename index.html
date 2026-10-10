@@ -4,61 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KosHunter - Katalog Kos Mahasiswa</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>KosHunter</h1>
-            <p>Platform Pencarian Kos Khusus Mahasiswa Telkom University</p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Beranda (Daftar Kos)</a></li>
-                    <li><a href="tambah-kos.html">Tambah Data Kos</a></li>
+<body class="bg-light">
+
+    <!-- Navigasi Responsif -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">KosHunter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda (Daftar Kos)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tambah-kos.html">Tambah Data Kos</a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+    </nav>
 
-        <main>
-            <section>
-                <h2>Daftar Kos Tersedia</h2>
-                <p>Berikut adalah beberapa pilihan kos di sekitar area kampus:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Foto</th>
-                            <th>Nama Kos</th>
-                            <th>Jenis Kos</th>
-                            <th>Harga / Bulan</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><img src="https://via.placeholder.com/80" alt="Kos Mawar" width="80"></td>
-                            <td>Kos Mawar Sukabirus</td>
-                            <td>Putri</td>
-                            <td>Rp 850.000</td>
-                            <td><a href="detail.html">Lihat Detail</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><img src="https://via.placeholder.com/80" alt="Kos Garuda" width="80"></td>
-                            <td>Kos Garuda Sukapura</td>
-                            <td>Putra</td>
-                            <td>Rp 1.000.000</td>
-                            <td><a href="detail.html">Lihat Detail</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 KosHunter - Muhammad Lauza Nabil (103022400118)</p>
-        </footer>
+    <!-- Content / Grid Container -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm border-0 p-4">
+                    <h2 class="h4 text-primary fw-bold mb-2">Daftar Kos Tersedia</h2>
+                    <p class="text-muted">Berikut adalah beberapa pilihan kos di sekitar area kampus Telkom University:</p>
+                    
+                    <div class="table-responsive mt-3">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Foto</th>
+                                    <th>Nama Kos</th>
+                                    <th>Jenis Kos</th>
+                                    <th>Harga / Bulan</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="https://via.placeholder.com/80" alt="Kos Mawar" class="img-thumbnail" width="80"></td>
+                                    <td class="fw-semibold">Kos Mawar Sukabirus</td>
+                                    <td><span class="badge bg-danger">Putri</span></td>
+                                    <td>Rp 850.000</td>
+                                    <td><a href="detail.html" class="btn btn-sm btn-outline-primary">Lihat Detail</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="https://via.placeholder.com/80" alt="Kos Garuda" class="img-thumbnail" width="80"></td>
+                                    <td class="fw-semibold">Kos Garuda Sukapura</td>
+                                    <td><span class="badge bg-primary">Putra</span></td>
+                                    <td>Rp 1.000.000</td>
+                                    <td><a href="detail.html" class="btn btn-sm btn-outline-primary">Lihat Detail</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer class="text-center py-3 text-muted border-top mt-auto bg-white">
+        <small>&copy; 2026 Aplikasi KosHunter </small>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
