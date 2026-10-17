@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $('#form-tambah-kos').on('submit', function (e) {
-        e.preventDefault(); // Mencegah reload halaman
+        e.preventDefault(); 
 
         let namaInput = $('#input-nama').val().trim();
         let jenisInput = $('#input-jenis').val();
@@ -58,7 +58,7 @@ $(document).ready(function () {
         };
 
         dataKos.push(dataBaru);
-        renderTabelKos(); // Re-render tabel
+        renderTabelKos(); 
 
         $('#form-tambah-kos')[0].reset();
         $('#notif-sukses').fadeIn().delay(2000).fadeOut();
