@@ -7,7 +7,7 @@ Tugas Praktikum Week 5 - JavaScript & jQuery
 - NIM: 103022400118
 
 ## Deskripsi Singkat
-Proyek **KosHunter** ini dibuat untuk menampilkan daftar dan informasi kos di sekitar Telkom University. Di BAB 5 ini, kodingannya sudah ditambahin JavaScript dan jQuery supaya tampilannya interaktif dan datanya bisa diolah secara dinamis.
+Proyek **KosHunter** ini dibuat untuk menampilkan daftar dan informasi kos di sekitar Telkom University. Di Week 5 ini, kodingannya sudah ditambahin JavaScript dan jQuery supaya tampilannya interaktif dan datanya bisa diolah secara dinamis.
 
 1. **JavaScript:**
    - Data kos disimpan di variabel array (`array of object`).
