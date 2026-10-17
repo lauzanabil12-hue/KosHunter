@@ -1,28 +1,31 @@
-# KosHunter - Platform Informasi Kos Mahasiswa
+# KosHunter
 
-Tugas Perkuliahan Week 5 - JavaScript & jQuery
+Tugas Praktikum Week 5 - JavaScript & jQuery
 
-**Identitas Mahasiswa:**
-- **Nama:** Muhammad Lauza Nabil
-- **NIM:** 103022400118
+**Data Mahasiswa:**
+- Nama: Muhammad Lauza Nabil
+- NIM: 103022400118
 
 ## Deskripsi Singkat
-Aplikasi **KosHunter** merupakan platform antarmuka pencarian dan pengelolaan katalog kos mahasiswa di sekitar area kampus Telkom University. Pada BAB 5 ini, aplikasi telah dilengkapi dengan logika JavaScript murni dan library jQuery untuk mendukung interaktivitas sisi *client*.
+Proyek **KosHunter** ini dibuat untuk menampilkan daftar dan informasi kos di sekitar Telkom University. Di BAB 5 ini, kodingannya sudah ditambahin JavaScript dan jQuery supaya tampilannya interaktif dan datanya bisa diolah secara dinamis.
 
 
-1. **JavaScript Murni (Vanilla JS):**
-   - **Data Dummy (Array of Object):** Menyimpan daftar kos dalam variabel array.
-   - **Render Dinamis & Perulangan:** Fungsi `renderTabelKos()` menggunakan perulangan `forEach` untuk membuat baris tabel secara otomatis dari data array.
-   - **Kalkulasi Data:** Menghitung jumlah total unit kos yang terdaftar secara otomatis dan menampilkannya pada UI.
+## Fitur yang Dibuat (BAB 5)
+1. **JavaScript:**
+   - Data kos disimpan di variabel array (`array of object`).
+   - Tabel diisi otomatis dari JavaScript pakai fungsi `renderTabelKos()` dan looping `forEach`.
+   - Jumlah total kos terhitung otomatis dan langsung update di layar.
 
-2. **jQuery (Interaktivitas & Event Handling):**
-   - **Efek Animasi (`slideToggle` & `fadeIn`):** Digunakan untuk menampilkan/menyembunyikan form tambah kos secara cepat serta memunculkan notifikasi sukses.
-   - **Event Handling Submit Form:** Menangkap data dari form input untuk ditambahkan ke array data kos secara instan tanpa *reload* halaman.
-   - **Event Handling Hapus Data:** Menghapus data kos tertentu dari daftar menggunakan delegasi event klik pada tombol hapus.
+2. **jQuery:**
+   - Efek `slideToggle` buat buka/tutup form tambah kos pas tombol diklik.
+   - Event submit form buat nambahin data kos baru ke tabel tanpa perlu reload halaman.
+   - Event klik tombol hapus buat ngehapus baris data kos langsung dari daftar.
 
-### 1. Sebelum Interaksi (Tampilan Awal)
 ![Sebelum Interaksi](SS-sebelum-interaksi.png)
 
 ![Sesudah Interaksi](SS-sesudah-interaksi.png)
 
-- [Saksikan Video Demo Interaktivitas KosHunter di Sini](https://drive.google.com/drive/folders/1mAskHLw2ZyWq7ibJSLLSY8fRedTLYWuB?usp=sharing)
+
+
+## Link Video Demo
+[video demo interaksi KosHunter](https://drive.google.com/drive/folders/1mAskHLw2ZyWq7ibJSLLSY8fRedTLYWuB?usp=sharing)
