@@ -9,8 +9,6 @@ Tugas Praktikum Week 5 - JavaScript & jQuery
 ## Deskripsi Singkat
 Proyek **KosHunter** ini dibuat untuk menampilkan daftar dan informasi kos di sekitar Telkom University. Di BAB 5 ini, kodingannya sudah ditambahin JavaScript dan jQuery supaya tampilannya interaktif dan datanya bisa diolah secara dinamis.
 
-
-## Fitur yang Dibuat (BAB 5)
 1. **JavaScript:**
    - Data kos disimpan di variabel array (`array of object`).
    - Tabel diisi otomatis dari JavaScript pakai fungsi `renderTabelKos()` dan looping `forEach`.
