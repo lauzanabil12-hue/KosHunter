@@ -1,15 +1,12 @@
-// 1. Array of Object (Data Dummy Kos)
 let dataKos = [
     { id: 1, nama: "Kos Mawar Sukabirus", jenis: "Putri", harga: 850000, foto: "https://via.placeholder.com/80" },
     { id: 2, nama: "Kos Garuda Sukapura", jenis: "Putra", harga: 1000000, foto: "https://via.placeholder.com/80" }
 ];
 
-// 2. Function untuk me-render data ke tabel HTML & menghitung total data
 function renderTabelKos() {
     let tbody = $('#tabel-kos-body');
-    tbody.empty(); // Bersihkan isi tabel sebelum di-render ulang
+    tbody.empty(); 
 
-    // Perulangan (forEach) untuk menampilkan data secara dinamis
     dataKos.forEach((item, index) => {
         let badgeColor = item.jenis === "Putri" ? "bg-danger" : (item.jenis === "Putra" ? "bg-primary" : "bg-warning");
         
@@ -29,21 +26,17 @@ function renderTabelKos() {
         tbody.append(row);
     });
 
-    // Menghitung jumlah data (Function & Manipulasi DOM)
     $('#total-kos').text(dataKos.length);
 }
 
-// 3. Event Handling & jQuery saat dokumen siap
+
 $(document).ready(function () {
-    // Render tabel pertama kali saat halaman dibuka
     renderTabelKos();
 
-    // jQuery Effect: Toggle Form Tambah Kos (slideToggle)
     $('#btn-toggle-form').on('click', function () {
         $('#section-form-tambah').slideToggle(300);
     });
 
-    // Event Handling: Tambah Data Dummy dari Form
     $('#form-tambah-kos').on('submit', function (e) {
         e.preventDefault(); // Mencegah reload halaman
 
@@ -51,13 +44,11 @@ $(document).ready(function () {
         let jenisInput = $('#input-jenis').val();
         let hargaInput = $('#input-harga').val();
 
-        // Validasi Sederhana
         if (namaInput === '' || hargaInput === '') {
             alert('Harap isi semua field!');
             return;
         }
 
-        // Tambah objek baru ke array
         let dataBaru = {
             id: Date.now(),
             nama: namaInput,
@@ -69,19 +60,16 @@ $(document).ready(function () {
         dataKos.push(dataBaru);
         renderTabelKos(); // Re-render tabel
 
-        // Reset form & beri efek fadeOut pada notifikasi
         $('#form-tambah-kos')[0].reset();
         $('#notif-sukses').fadeIn().delay(2000).fadeOut();
     });
 
-    // Event Handling (Delegasi): Hapus Data Kos
     $('#tabel-kos-body').on('click', '.btn-hapus', function () {
         let idHapus = $(this).data('id');
         
-        // Filter array untuk menghapus data
+
         dataKos = dataKos.filter(item => item.id !== idHapus);
         
-        // Render ulang tabel
         renderTabelKos();
     });
 });
