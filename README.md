@@ -1,6 +1,6 @@
-# KosHunter Frontend (React)
+# KosHunter Frontend - Week 7
 
-Tugas Praktikum Week 6 - React Dasar
+Tugas Web Week 7 - AJAX dan Konsumsi API Eksternal/Mock
 
 **Data Mahasiswa:**
 - Nama: Muhammad Lauza Nabil
@@ -8,26 +8,30 @@ Tugas Praktikum Week 6 - React Dasar
 
 ---
 
-## Deskripsi Aplikasi
-KosHunter adalah aplikasi web berbasis React JS dan Bootstrap 5 untuk mengelola daftar kosan mahasiswa Telkom University. Dibuat dengan Vite untuk memenuhi tugas praktikum React dasar (penerapan Component, Props, State, Form, dan Conditional Rendering).
+## Deskripsi Penambahan API Eksternal
+Aplikasi KosHunter ditingkatkan dengan fitur pengambilan data ulasan/testimoni secara asinkron (AJAX) menggunakan fungsi `fetch()` dari mock API JSONPlaceholder.
 
----
+## Jawaban Pertanyaan Tugas
+1. **Endpoint API yang Digunakan:**
+   - URL: `https://jsonplaceholder.typicode.com/comments?_limit=4`
+   - **Alasan:** Dipilih sebagai data mock untuk menampilkan ulasan/testimoni pengguna pada halaman katalog KosHunter agar antarmuka terlihat lebih realistis dan dinamis.
 
-## Pembagian Komponen React
-1. `Navbar.jsx`: Header navigasi aplikasi.
-2. `SummaryCard.jsx`: Ringkasan total unit kos yang terdaftar.
-3. `KosForm.jsx`: Form input untuk menambah data kos baru.
-4. `KosItem.jsx`: Baris data item kos pada tabel.
-5. `KosList.jsx`: Tabel daftar kos dengan fitur `.map()` dan Conditional Rendering.
+2. **Penerapan Pola Loading/Error:**
+   - Dikelola pada komponen `TestimonialList.jsx` menggunakan React State (`loading`, `error`, dan `reviews`).
+   - Fungsi `fetchReviews()` menangani proses asinkron:
+     - Saat proses dimulai, `loading` di-set `true` dan `error` di-set `null`.
+     - Jika respons berhasil (`response.ok`), data disimpan ke dalam state `reviews`.
+     - Jika proses gagal (`catch`), pesan kesalahan disimpan ke dalam state `error` untuk menampilkan alert merah beserta tombol **"Coba Lagi"** yang memicu pemanggilan ulang fungsi `fetchReviews()`.
 
 ---
 
 ## Bukti Tampilan Aplikasi
-### 1. Terminal Running (npm run dev)
-![Terminal npm run dev](SS-1-terminal-npm-run-dev.png)
 
-### 2. Tampilan Utama Aplikasi
-![Tampilan Utama](SS-2-tampilan-utama.png)
+### 1. Kondisi Loading
+![Kondisi Loading](SS-1-loading.png)
 
-### 3. Conditional Rendering (Data Kosong)
-![Conditional Rendering](SS-3-conditional-rendering.png)
+### 2. Kondisi Success
+![Kondisi Success](SS-2-success.png)
+
+### 3. Kondisi Error & Tombol Retry
+![Kondisi Error](SS-3-error.png)
