@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import SummaryCard from './components/SummaryCard';
 import KosForm from './components/KosForm';
 import KosList from './components/KosList';
+import TestimonialList from './components/TestimonialList';
 
 export default function App() {
   const [dataKos, setDataKos] = useState([
@@ -23,6 +24,10 @@ export default function App() {
       <Navbar />
       <div className="container mb-5 flex-grow-1">
         <SummaryCard totalKos={dataKos.length} />
+        
+        {/* Komponen BAB 7 AJAX */}
+        <TestimonialList />
+
         <KosForm onTambahKos={handleTambahKos} />
         <KosList dataKos={dataKos} onHapusKos={handleHapusKos} />
       </div>
